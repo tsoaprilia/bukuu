@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
  
   <style>
-     
+     body{
+      background-color:rgba(221, 187, 142, 0.5);
+     }
       .jumbotron{
         text-align: center;
-        margin-top: -220px;
-        height: 550px;
-        background-image: url(b.webp);
+        margin-top: -230px;
+        height: 650px;
+        background-image: url(A.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -39,7 +41,17 @@
               background-color:rgb(212, 171, 118);
               height: 160px;
           }
-          
+         .o{
+          background-color:rgb(179, 150, 114);
+              height: 80px;
+              width: 1300px;
+              margin: 0px 350px;
+         } 
+        
+        
+        .cardd{
+          margin:0px 150px;
+        }
   </style>
 </head>
 <body>
@@ -54,62 +66,18 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                <font color="#FF FF FF"> Profil</font>
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Pengumuman</a>
-                <a class="dropdown-item" href="#">About us</a>
-                <a class="dropdown-item" href="#">Visi&Misi</a>
-               </div>
-              </li>       
-            </li> 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                  <font color="#FF FF FF"> Info</font>
-                </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Buku Terbaru</a>
-                  <a class="dropdown-item" href="#">Penyemangat</a>
-                  <a class="dropdown-item" href="#">Help</a>
-                 </div>
-                </li>       
-              </li> 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                <font color="#FF FF FF"> Kategori Buku</font>
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Novel</a>
-                <a class="dropdown-item" href="#">Motifasi</a>
-                <a class="dropdown-item" href="#">Majalah</a>
-                <a class="dropdown-item" href="#">Pusi&Sastra</a>
-                <a class="dropdown-item" href="#">Bahasa</a>
-                <a class="dropdown-item" href="#">Sains&Teknik</a>
-               </div>
-              </li>       
-        
-            <li class="nav-item">
-              <a class="nav-link" href="adminform.php"><font color="#FF FF FF"> Admin</font> </a>
-            </li> 
-            
-      </ul>
-      <div class="container text-align">
-        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button herf="loginform.php" type="button" class="btn btn-outline-light text-dark">Login </button>
-        <button type="button" herf="" class="btn btn-outline-light text-dark">Masuk</button>
-       </div>
+     
     </div>  
+    <div class="container text-align">
+      &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >KEMBALI</a></button>
+        <button type="button"  class="btn btn-outline-light text-dark"><a href="pesanform.php" class="btn " >PESAN</a></button>
+        
+      </div>
   </nav>
 <div class="jumbotron text-center " style="margin-bottom:0">
   
 </div>
-<div class=" op text-align right" style="margin-bottom:0">
-    <br>
-    <h1><font color="#FFFFFF"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;BUKUKU STORE</font></h1>
-    <h3><font color="#FFFFFF"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pusatnya Buku</font></h3>
-  </div>
+
 <br>
 <br>
 
@@ -143,50 +111,6 @@
 <br>
 <br>
 
-<div class="container">
-<div class="alert alert-warning">
-    <strong>Help!</strong> Untuk Melihat Stok buku di BUKUKU STORE {klik kategori buku}.
-  </div>
-  <div class="alert alert-secondary">
-    <strong>Help!</strong> Untuk Memesan Buku {harus Login dulu} (pojok kiri atas).
-  </div>
-  <div class="alert alert-dark">
-    <strong>Help!</strong> Untuk yang sudah Login silahkan Masuk.
-  </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<div class="container text-center">
-    <h1 class="display-4">BUKUKU STORE</h1>
-    <img src="aa.png" width="300" height="300" class="rounded-circle">
-</div>
-
-<div class="container">
-  <div class="row">
-      <div class="col-sm text-center">
-          <br><br>
-          <h1>ABOUT US</h1>
-          <br>
-      </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-sm text-justify text-center">
-    BUKUKU STORE adalah Toko Buku Online yang menjual berbagai kategori buku.
-    <br>
-    Disini kami menyediakan banyak diskon dan kami menyediakan buku buku terbaru.
-    <br>
-    Selain itu disini kami juga menyediakan E-book.
-  </div>
-</div>
-
-<br><br><br>
-
-
-
 <div class="containerhm">
     <div class="row">
         <div class="col-sm text-center">
@@ -195,67 +119,474 @@
             <br>
         </div>
     </div>
-
-<br><br>
-
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>BUKU TERBARU</h2>
-      <h5>Best Seller :</h5>
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="1.jpg"  width="200" height="250">
-      <br>
-      <br><font color="rgb(77, 86, 88)" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by Boy Candra</font>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apakah kau ingat saat kita berjanji untuk saling membahagiakan?     <br>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Katamu, setiap perasaan yang tumbuh adalah sebuah alasan. Alasan bahwa hati patut dipertahankan. Namun, cinta saja belum cukup menyatukan mimpi yang berbeda di antara kita. Dan, menepati janji ternyata tak semudah mengucapkannya.</p>
-     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apakah kau juga tahu bahwa kenangan bersamamu selalu muncul tiba-tiba?
-     <br>
-     <br>
-     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="2.jpg"  width="200" height="250">
-     <br><font color="rgb(77, 86, 88)" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;karya Ritik Sendu</font>
-     <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Cinta pertama seorang perempuan yang didapat dari laki-laki adalah dari ayahnya. Dan cinta pertama itu, telah mematahkan hatiku. Ayahku sendiri membuatku berhenti percaya dengan yang namanya cinta. — Binta.
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Andai bisa sesederhana itu, aku tidak akan pernah mencintaimu sejak awal. Aku tidak akan mengambil risiko, mengorbankan perasaanku. Namun, semua ini diluar kendaliku.” — Nugraha.   <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untuk yang terjebak di masa lalu, untuk yang sedang melangkah ragu, buku ini akan membantumu beranjak dari kata yang lalu, ke kata yang baru. — Rintik Sedu.
-
-        <br>
-     
-      </ul>
-      <hr class="d-sm-none">
-    </div>
-    <div class="col-sm-8">
-      <h2>Penyemangat</h2>
-      <h5>Malang, March 13, 2020</h5>
-    <br><img src="4.png"  width="420" height="600">
-      <br>
-      
-      <br>
-      <br>
-      <br>
-      <br>
-      <h2>Visi dan Misi</h2>
-      <h5>Malang, March 13, 2020</h5>
-      <br><img src="p.jpg" width="680" height="650">
-      <br>
-      <br>
-      VISI 
-      <p>
-      Turut berpartisipasi dalam pengembangan intelektual bangsa dengan menyebarkan ilmu pengetahuan dan informasi melalui model retail yang berbeda dan pendistribusian buku, ATK, dan produk multimedia, ditandai dengan pelayanan yang terbaik, manajemen yang proaktif, dan perilaku bisnis yang tepat.  
-    </p>
-     <br>
-    MISI
+<br>
+<br>
+<br>
+<div class="o text-center " style="margin-bottom:0  ">
     <br>
-      1.      Untuk menjadi agent of change di dalam masyarakat yang pluralistic.
-     <br>
-      2.      Untuk menjadi pemimpin di dalam retail dan distribusi ilmu pengetahuan, informasi dan infotainment berbasis media.
-     <br>
-      3.      Untuk menyediakan produk-produk yang canggih, inovatif, dan berorientasi pasarA.
-      
-      
-     </div>
+  <h4><font color="#FFFFFF">NOVEL</font></h5>
+  <br>
+  <br>
   </div>
+  <div class="a text-center " style="margin-bottom:0  ">
+  <br>
+<br>
+    <div class="container text-center">
+<table width="25%" >
+<tr>
+
+<td>
+<div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="a1.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">BRINGING UP BEBE</h4>
+      <p class="card-text">Pre Order: 10-20 Februari 2020 Bonus Pouch Eksklusif Menjadi ibu, bukan berarti harus mengorbankan banyak hal kesenangan kita.</p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div>
+</td>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="a2.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">MOZAIK TERINDAH</h4>
+      <p class="card-text">Mozaik Terindah merupakan kumpulan bab-bab pilihan editor yang diambil dari buku-buku Andrea Hirata.</p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="a3.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">KAMU TERLALU BANYAK BERCANDA</h4>
+      <p class="card-text">Buku "Kamu Terlalu Banyak Bercanda" tentang hitam untuk putihnya "Nanti Kita Cerita Tentang Hari Ini" </p>
+      <a  class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="a4.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">GANJIL GENAP</h4>
+      <p class="card-text">Gimana rasanya diputusin setelah berpacaran selama tiga belas tahun? Hidup Gala yang mendadak jomblo semakin runyam ketika adiknya kebelet nikah! Gala bertekad pantang lajang menjelang umur kepala tiga. </p>
+      <a  class="btn btn-primary stretched-link">95.000</a>
+    </div>
+  </div></td>
+</tr>
+<tr><td>
+<div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="a5.jpg" alt="Card image" style="width:150px; margin:25px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">HABIBIE DAN SOEHARTO</h4>
+      <p class="card-text">Sistem ekonomi dan pembangunan di Indonesia sudah lama dalam sorotan B.J. Habibie dan sering diucapkannya dalam berbagai kesempatan.</p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div>
+</td>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="a66.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">HEART SHAPED TEARS</h4>
+      <p class="card-text">Pengiriman Mulai 11 Februari 2020 Kau membuatku tak bisa hidup tanpamu, dan sekarang kau bertanya ada apa denganku?</p>
+      <a class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="1.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">SENJA PAGI</h4>
+      <p class="card-text">Apakah kau ingat saat kita berjanji untuk saling membahagiakan? Apakah kau juga tahu bahwa kenangan bersamamu selalu muncul tiba-tiba? </p>
+      <a class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="2.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">KATA</h4>
+      <p class="card-text">“Cinta pertama seorang perempuan yang didapat dari laki-laki adalah dari ayahnya. Dan cinta pertama itu, telah mematahkan hatiku. </p>
+      <a  class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td></tr>
+
+</table>
 </div>
 <br>
 <br>
+  </div>
+
 <br>
+
+
+
+<br>
+<br>
+<br>
+<div class="o text-center " style="margin-bottom:0  ">
+    <br>
+  <h4><font color="#FFFFFF">MOTIFASI</font></h5>
+  <br>
+  <br>
+  </div>
+  <div class="a text-center " style="margin-bottom:0  ">
+  <br>
+<br>
+    <div class="container">
+<table width="25%" >
+<tr>
+
+<td>
+<div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="c1.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">BAHAGIA MAKSIMAL DENGAN HIDUP MINIMAL</h4>
+      <p class="card-text">by MUHAJJAH SARATINI </p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div>
+</td>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="c2.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">AKU SEORANG INTROVER</h4>
+      <p class="card-text">by @iCampusIndonesia </p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="c3.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">ARE YOU THE ONE</h4>
+      <p class="card-text">by BENING PERTIWI </p>
+      <a  class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="c4.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">SENI HIDUP BAHAGIA DENGAN BERFIKIR POSITIF</h4>
+      <p class="card-text">by Coky Aditya Z.  </p>
+      <a  class="btn btn-primary stretched-link">95.000</a>
+    </div>
+  </div></td>
+</tr>
+<tr><td>
+<div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="c5.jpg" alt="Card image" style="width:150px; margin:25px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">BERANI RESIGN!</h4>
+      <p class="card-text">by  Aji Sukma Dan Elisabeth Murni </p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div>
+</td>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="c6.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">TERANG DIBENDERA NEGERI</h4>
+      <p class="card-text">by MUNDHAKIR SALMAN </p>
+      <a class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="c7.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">HIPNOTIS UNUTK KEHIDUPAN SEHARI HARI</h4>
+      <p class="card-text">by EFVY ZAM </p>
+      <a class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="c8.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">LIFE IN MY HAND</h4>
+      <p class="card-text">by ERIC SIREGAR  </p>
+      <a  class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td></tr>
+
+</table>
+</div>
+      </div>
+<br>
+<br>
+<br>
+
+
+
+
+<br>
+<div class="o text-center " style="margin-bottom:0  ">
+    <br>
+  <h4><font color="#FFFFFF">MAJALAH</font></h5>
+  <br>
+  <br>
+  </div>
+  <div class="a text-center " style="margin-bottom:0  ">
+  <br>
+<br>
+    <div class="container">
+<table width="25%" >
+<tr>
+
+<td>
+<div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="d1.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">ALLETA</h4>
+      <p class="card-text">by Galih Aditya </p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div>
+</td>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="d2.png" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">ERENS PLAY</h4>
+      <p class="card-text">by Orihara Ran .</p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="a3.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">MEMAHAMI UNTUK MEMANFAATKAN</h4>
+      <p class="card-text">by Arfiansyah Darwin & Purjono </p>
+      <a  class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td>
+</tr>
+</table>
+</div>
+      </div>
+<br>
+<br>
+<br>
+
+
+
+<br>
+<br>
+<br>
+<div class="o text-center " style="margin-bottom:0  ">
+    <br>
+  <h4><font color="#FFFFFF">PUISI & SASTRA</font></h5>
+  <br>
+  <br>
+  </div>
+  <div class="a text-center " style="margin-bottom:0  ">
+  <br>
+<br>
+    <div class="container">
+<table width="25%" >
+<tr>
+
+<td>
+<div class="card text-center text-center" style="width:300px">
+    <img class="card-img-top " src="e1.png" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">SURAT KOPI</h4>
+      <p class="card-text">by Joko Pinurbo  </p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div>
+</td>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="e2.png" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">MELINTASI BATAS</h4>
+      <p class="card-text">by Mohsin Hamid  </p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="e3.png" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">TALIJIWO</h4>
+      <p class="card-text">by Mohsin Hamid  </p>
+      <a  class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="e4.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">PERBINCANGAN TERAKHIR</h4>
+      <p class="card-text">by Tjahjono Widarmanto   </p>
+      <a  class="btn btn-primary stretched-link">95.000</a>
+    </div>
+  </div></td>
+</tr>
+<br>
+<tr>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="e6.png" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">PEMETIK MIMPI</h4>
+      <p class="card-text">by Siswa SMA Kesatrian 2 Semarang  </p>
+      <a class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div></td>
+  <td>
+<div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="e5.jpg" alt="Card image" style="width:150px; margin:25px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">THE CHOISE WE MAKE</h4>
+      <p class="card-text">by  Karma Brown  </p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div>
+</td></tr>
+
+</table>
+</div>
+      </div>
+<br>
+<br>
+<br>
+<div class="o text-center " style="margin-bottom:0  ">
+    <br>
+  <h4><font color="#FFFFFF">BAHASA</font></h5>
+  <br>
+  <br>
+  </div>
+  <div class="a text-center " style="margin-bottom:0  ">
+  <br>
+<br>
+    <div class="container">
+<table width="25%" >
+<tr>
+
+<td>
+<div class="card text-center text-center" style="width:300px">
+    <img class="card-img-top " src="f1.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">EASY GRAMMAR FOR BEGINNER</h4>
+      <p class="card-text">by  Anindha Padukarasa   </p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div>
+</td>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="f2.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">3 BHASA:KAMUS BERGAMBAR SUPER GENIUS</h4>
+      <p class="card-text">by KAK RETNO   </p>
+      <a  class="btn btn-primary stretched-link">98.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="f3.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">LETS SPEAK</h4>
+      <p class="card-text">by Suprihatin, S.Pd.   </p>
+      <a  class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="f4.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">SEMANTIK</h4>
+      <p class="card-text">by Prof. Dr. M. Samiati Tarjana, Dipl. TESOL   </p>
+      <a  class="btn btn-primary stretched-link">95.000</a>
+    </div>
+  </div></td>
+</tr>
+</table>
+</div>
+      </div>
+<br>
+<br>
+<br>
+<div class="o text-center " style="margin-bottom:0  ">
+    <br>
+  <h4><font color="#FFFFFF">SAINS & TEKNIK</font></h5>
+  <br>
+  <br>
+  </div>
+  <div class="a text-center " style="margin-bottom:0  ">
+  <br>
+<br>
+    <div class="container">
+<table width="25%" >
+<tr>
+
+<td>
+<div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="g1.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">MESIN LISTRIK ARUS BOLAK BALIK</h4>
+      <p class="card-text">Buku Mesin Listrik Arus Bolak-Balik ini merupakan revisi dari buku sebelumnya dengan judul yang sam. Buku ini berisikan teori dasar tentang mesin-mesin listrik arus bolak-balik</p>
+      <a  class="btn btn-primary stretched-link">110.000</a>
+    </div>
+  </div>
+</td>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="g2.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">TEKNOLOGI PERBAIKAN TANAH</h4>
+      <p class="card-text">Buku ini terdiri dari beberapa pokok bahasan yang diawali dengan pendahuluan. Bab ini memberikan pemahaman bagi para pembaca mengenai tujuan, arti penting, dan kapan dilakukan perbaikan tanah</p>
+      <a  class="btn btn-primary stretched-link">110.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="g3.jpg" alt="Card image" style="width:150px; margin:60px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">SEMIKONDUKTOR</h4>
+      <p class="card-text">Bahan semikonduktor merupakan bahan dasar yang dipakai dalam merancang dan memproduksi komponen elektronika aktif/diskrit seperti transistor, FET, IC analog dan digital, juga berbagai alat khusus lainnya. </p>
+      <a  class="btn btn-primary stretched-link">110.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="g4.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">PEMROGRAMAN MATLAB</h4>
+      <p class="card-text">Bahan semikonduktor merupakan bahan dasar yang dipakai dalam merancang dan memproduksi komponen elektronika aktif/diskrit seperti transistor, FET, IC analog dan digital, juga berbagai alat khusus lainnya. </p>
+      <a  class="btn btn-primary stretched-link">110.000</a>
+    </div>
+  </div></td>
+</tr>
+<tr><td>
+<div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="g5.jpg" alt="Card image" style="width:150px; margin:25px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">APLIKASI TEKNOLOGI KUANTUM</h4>
+      <p class="card-text">Kuantum komputasi dan informasi menjadi tren penelitian intensif banyak negara maju di penghujung abad ini. Pencapaian inovasi ini, akan merubah secara revolusioner bidang komputasi dan informasi elektronik yang dikenal saat ini.  </p>
+      <a  class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div>
+</td>
+<td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="g6.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">SYNTESA POLY LACTID ACID</h4>
+      <p class="card-text">Buku ini menyajikan proses, tata cara bagaimana pembuatan PLA (Poly Lactic Acid) dengan metode Ring Opening Polymerization. Disertai pengertian secara umum tentang polymer serta faktor faktor pendukungnya, </p>
+      <a class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="g7.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">REKAYASA LALU LINTAS</h4>
+      <p class="card-text">Apakah kau ingat saat kita berjanji untuk saling membahagiakan? Apakah kau juga tahu bahwa kenangan bersamamu selalu muncul tiba-tiba? </p>
+      <a class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td>
+  <td><div class="card text-center" style="width:300px">
+    <img class="card-img-top " src="g8.jpg" alt="Card image" style="width:150px; margin:30px 70px;">
+    <div class="card-body">
+      <h4 class="card-title">KRETA CEPAT</h4>
+      <p class="card-text">Tak dapat dipungkiri kereta cepat merupakan salah satu terobosan teknologi paling menonjol dalam hal pengembangan angkutan penumpang sepanjang periode kedua abad-20 </p>
+      <a  class="btn btn-primary stretched-link">125.000</a>
+    </div>
+  </div></td></tr>
+
+</table>
+</div>
+      </div>
+<br>
+<br>
+<br>
+
+
+
+
+
 <br>
 <div class="opp text-center " style="margin-bottom:0  ">
     <br>

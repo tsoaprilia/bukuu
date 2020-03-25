@@ -14,8 +14,8 @@
       .jumbotron{
         text-align: center;
         margin-top: -220px;
-        height: 550px;
-        background-image: url(b.webp);
+        height: 650px;
+        background-image: url(A.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -73,11 +73,6 @@
 <div class="jumbotron text-center " style="margin-bottom:0">
   
 </div>
-<div class=" op text-align right" style="margin-bottom:0">
-    <br>
-    <h1><font color="#FFFFFF"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;BUKUKU STORE</font></h1>
-    <h3><font color="#FFFFFF"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pusatnya Buku</font></h3>
-  </div>
 <br>
 <br>
 
@@ -91,7 +86,7 @@
 <br>
 <div class="container text-center">
   <h2>Hallo Pengunjung BUKUKU STORE</h2>
-  <h1>LOGIN DULU YA :( </h1> 
+  <h1>REGISTRASI DULU YA :( </h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
