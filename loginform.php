@@ -137,7 +137,7 @@
 <br>
 <div class="opp text-center " style="margin-bottom:0  ">
     <br>
-  <h4><font color="#FFFFFF"></font></h5>
+    <h6><font color="#FFFFFF">referensi gambar dari GOOGLE</font></h6>
   <br>
   <h5><font color="#FFFFFF"> Kebijakan Privasi  |   Syarat dan Ketentuan  |   Peta Situs
     </font></h3>

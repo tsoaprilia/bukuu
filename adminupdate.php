@@ -129,7 +129,6 @@
   <?php
 include 'adminkoneksi.php';
 $nomer = $_POST["nomer"];
-$nama = $_POST["nama"];
 $emaill=$_POST["emaill"];
 $alamat = $_POST["alamat"];
 $o1 = $_POST["o1"];
@@ -172,7 +171,7 @@ $o37 = $_POST["o37"];
 
 
 
-$query = "UPDATE pesan SET nama='$nama', emaill='$emaill', alamat='$alamat',o1='$o1',o2='$o2',o3='$o3',o4='$o4',o5='$o5',o6='$o6',o7='$o7',o8='$o8',o9='$o9',o10='$o10',o11='$o11',o12='$o12',o13='$o13',o14='$o14',o15='$o15',o16='$o16',o17='$o17',o18='$o18',o19='$o19',o20='$o20',o21='$o21',o22='$o22',o23='$o23',o24='$o24',o25='$o25',o26='$o26',o27='$o27',o28='$o28',o29='$o29',o30='$o30',o31='$o31',o32='$o32',o33='$o33',o34='$o34',o35='$o35',o36='$o36',o37='$o37' WHERE nomer='$nomer'";
+$query = "UPDATE pesan SET  emaill='$emaill', alamat='$alamat',o1='$o1',o2='$o2',o3='$o3',o4='$o4',o5='$o5',o6='$o6',o7='$o7',o8='$o8',o9='$o9',o10='$o10',o11='$o11',o12='$o12',o13='$o13',o14='$o14',o15='$o15',o16='$o16',o17='$o17',o18='$o18',o19='$o19',o20='$o20',o21='$o21',o22='$o22',o23='$o23',o24='$o24',o25='$o25',o26='$o26',o27='$o27',o28='$o28',o29='$o29',o30='$o30',o31='$o31',o32='$o32',o33='$o33',o34='$o34',o35='$o35',o36='$o36',o37='$o37' WHERE nomer='$nomer'";
 $result =  $connect ->query($query);
 $num = mysqli_affected_rows($connect);
 
@@ -199,7 +198,7 @@ $num = mysqli_affected_rows($connect);
 <br>
 <div class="opp text-center " style="margin-bottom:0  ">
     <br>
-  <h4><font color="#FFFFFF"></font></h5>
+    <h6><font color="#FFFFFF">referensi gambar dari GOOGLE</font></h6>
   <br>
   <h5><font color="#FFFFFF"> Kebijakan Privasi  |   Syarat dan Ketentuan  |   Peta Situs
     </font></h3>

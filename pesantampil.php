@@ -196,7 +196,7 @@ while($data = mysqli_fetch_array ($sql)){
   echo "<td>",$data ['o35']."</td>";
   echo "<td>",$data ['o36']."</td>";
   echo "<td>",$data ['o37']."</td>";
-  echo "<td> <a href='adminupdate.php?nomer=".$data['nomer']."'>EDIT</a></td>";
+  echo "<td> <a href='adminupdateform.php?nomer=".$data['nomer']."'>EDIT</a></td>";
   echo "<td><a href='adminpesenhapus.php?nomer=".$data['nomer']."'onclick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>delete</a></td>";
   echo "</tr>";
 }

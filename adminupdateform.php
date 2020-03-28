@@ -127,10 +127,10 @@ $row = $result->fetch_assoc();
     <tr>
    
     <tr>
-    <td>Email<input  type="text"  name="emaill"  value="<?php echo $row['emaill'];?>  /><td>
+    <td>Email<input  type="text"  name="emaill"  value="<?php echo $row['emaill'];?>"  /><td>
     </tr>
     <tr>
-    <td>Alamat<input  type="text"  name="alamat"   value="<?php echo $row['alamat'];?>/><td>
+    <td>Alamat<input  type="text"  name="alamat"   value="<?php echo $row['alamat'];?>"/><td>
     </tr>
     <tr>
     <th width="55"><font color="black" size="4">No</font>
@@ -305,7 +305,7 @@ $row = $result->fetch_assoc();
 <br>
 <div class="opp text-center " style="margin-bottom:0  ">
     <br>
-  <h4><font color="#FFFFFF"></font></h5>
+    <h6><font color="#FFFFFF">referensi gambar dari GOOGLE</font></h6>
   <br>
   <h5><font color="#FFFFFF"> Kebijakan Privasi  |   Syarat dan Ketentuan  |   Peta Situs
     </font></h3>
