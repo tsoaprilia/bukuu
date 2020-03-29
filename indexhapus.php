@@ -7,14 +7,78 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
  
   <style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.containerr{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 45%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.ya{
+  background-color:rgba(109, 105, 101, 0.157);
+              height: 710px;
+}
+
      
       .jumbotron{
         text-align: center;
         margin-top: -220px;
-        height: 550px;
+        height: 650px;
         background-image: url(A.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .containerr{
+      background-color: rgba(236, 235, 234, 0);
     }
   .fakeimg {
     height: 700px;
@@ -37,7 +101,7 @@
           }
           .opp{
               background-color:rgb(212, 171, 118);
-              height: 500px;
+              height: 160px;
           }
           
   </style>
@@ -54,17 +118,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-   
-      <div class="container text-align"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
-        <button type="button"  class="btn btn-outline-light text-dark"><a href="pesantampil.php" class="btn " >Data Pemesanan</a></button>
-        <button type="button" class="btn btn-outline-light text-dark"><a href="akhir.php" class="btn " >LOGOUT</a></button> 
-      </div>
-    </div>  
+         
   </nav>
 <div class="jumbotron text-center " style="margin-bottom:0">
-  
 </div>
-
 <br>
 <br>
 
@@ -77,8 +134,8 @@
 <br><br><br>
 <br>
 <div class="container text-center">
-  <h2>Message Posts from Visitors</h2>
-  <h1>RESPONE PLEASE!</h1> 
+  <h2>Pengumuman BUKUKU</h2>
+  <h1>TIME T0 SAY WELCOME</h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
@@ -96,45 +153,45 @@
 <br><br>
 <br>
 <br>
-<div class="opp text-center " style="margin-bottom:0  ">
 <br>
-<div class="iya">
 
 
-<center><h2> Message </h2>
-<table border="1" width="70%" ></center>
-<tr>
-<th bgcolor="white">id</th>
-<th bgcolor="white">username</th>
-<th bgcolor="white">email</th>
-<th bgcolor="white">message</th>
-<th bgcolor="white">time</th>
-<th bgcolor="white">DELETE</th>
-</tr>
-<?php
-include "adminyakoneksi.php";
-$query = "SELECT * FROM contact";
-$sql = mysqli_query($connect,$query);
-while($data = mysqli_fetch_array ($sql)){
-  echo "<tr>";
-  echo "<td>",$data ['id']."</td>";
-  echo "<td>",$data ['fname']."</td>";
-  echo "<td>",$data ['emaill']."</td>";
-  echo "<td>",$data ['subject']."</td>";
-  echo "<td>",$data ['time']."</td>";
-  echo "<td><a href='admincontacthapus.php?id=".$data['id']."'onclick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>delete</a></td>";
-  echo "</tr>";
-}
+  <div class="alert alert-primary text-center">
+  <?php
+include 'adminkoneksi.php';
+$nomerr= $_GET['nomerr'];
+$query = "DELETE FROM goo WHERE nomerr='$nomerr'";
+$result =  mysqli_query($connect, $query);
+$num = mysqli_affected_rows($connect);
+ if($num>0){
+     echo " BERHASIL hapus DATA <br>";
+ }else{
+     echo "gagal hapus <br>";
+ }
+ echo "<a href='adminya1.php'>lihat data</a>";
 ?>
 
-
-</div>
-<br>
-
-<br>
   </div>
 </div>
 
-</body> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="opp text-center " style="margin-bottom:0  ">
+    <br>
+    <h6><font color="#FFFFFF">referensi gambar dari GOOGLE</font></h6>
+  <br>
+  <h5><font color="#FFFFFF"> Kebijakan Privasi  |   Syarat dan Ketentuan  |   Peta Situs
+    </font></h3>
+  <h7><font color="#FFFFFF"> Copyright © 2008-2020 Bukukustore.com. All rights reserved</font></h7>
+  <br>
+  
+  </div>
+</div>
 
+</body>
 </html>

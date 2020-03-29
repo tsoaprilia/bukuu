@@ -11,10 +11,15 @@
       .jumbotron{
         text-align: center;
         margin-top: -220px;
-        height: 550px;
+        height: 650px;
         background-image: url(A.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .jumbotronn{
+        height: 550px;
+        background-color:rgba(77, 73, 68, 0.178);
+       
     }
   .fakeimg {
     height: 700px;
@@ -37,7 +42,7 @@
           }
           .opp{
               background-color:rgb(212, 171, 118);
-              height: 500px;
+              height: 160px;
           }
           
   </style>
@@ -54,11 +59,26 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-   
-      <div class="container text-align"> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
-        <button type="button"  class="btn btn-outline-light text-dark"><a href="pesantampil.php" class="btn " >Data Pemesanan</a></button>
-        <button type="button" class="btn btn-outline-light text-dark"><a href="akhir.php" class="btn " >LOGOUT</a></button> 
-      </div>
+          <ul class="navbar-nav">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <font color="#FF FF FF"> Kategori Buku</font>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Novel</a>
+                <a class="dropdown-item" href="#">Motifasi</a>
+                <a class="dropdown-item" href="#">Majalah</a>
+                <a class="dropdown-item" href="#">Pusi&Sastra</a>
+                <a class="dropdown-item" href="#">Bahasa</a>
+                <a class="dropdown-item" href="#">Sains&Teknik</a>
+               </div>
+              </li>       
+        
+             
+            
+      </ul>
+      
     </div>  
   </nav>
 <div class="jumbotron text-center " style="margin-bottom:0">
@@ -74,11 +94,11 @@
 
 
 
-<br><br><br>
+<br><br>
 <br>
 <div class="container text-center">
-  <h2>Message Posts from Visitors</h2>
-  <h1>RESPONE PLEASE!</h1> 
+  <h2>SAMPAI JUMPA LAGI</h2>
+  <h1>terimakasih telah berkunjung</h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
@@ -95,46 +115,45 @@
 </div>
 <br><br>
 <br>
-<br>
-<div class="opp text-center " style="margin-bottom:0  ">
-<br>
-<div class="iya">
 
 
-<center><h2> Message </h2>
-<table border="1" width="70%" ></center>
-<tr>
-<th bgcolor="white">id</th>
-<th bgcolor="white">username</th>
-<th bgcolor="white">email</th>
-<th bgcolor="white">message</th>
-<th bgcolor="white">time</th>
-<th bgcolor="white">DELETE</th>
-</tr>
-<?php
-include "adminyakoneksi.php";
-$query = "SELECT * FROM contact";
-$sql = mysqli_query($connect,$query);
-while($data = mysqli_fetch_array ($sql)){
-  echo "<tr>";
-  echo "<td>",$data ['id']."</td>";
-  echo "<td>",$data ['fname']."</td>";
-  echo "<td>",$data ['emaill']."</td>";
-  echo "<td>",$data ['subject']."</td>";
-  echo "<td>",$data ['time']."</td>";
-  echo "<td><a href='admincontacthapus.php?id=".$data['id']."'onclick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>delete</a></td>";
-  echo "</tr>";
-}
+
+
+ <div class="container">
+  
+  <div class="alert alert-primary text-center">
+  <?php
+   session_start();
+   session_destroy();
 ?>
 
-
+<div align="center">
+  <h2>Anda telah berhasil logout..</h2>
+  Silahkan klik <a href="loginform.php">disini</a> untuk login kembali
 </div>
-<br>
 
+  </div>
+</div>
+</div>
+ <br>
+ <br>
+ <br>
+ <br>
 <br>
+<br>
+<br>
+<br>
+<div class="opp text-center " style="margin-bottom:0  ">
+    <br>
+    <h6><font color="#FFFFFF">referensi gambar dari GOOGLE</font></h6>
+  <br>
+  <h5><font color="#FFFFFF"> Kebijakan Privasi  |   Syarat dan Ketentuan  |   Peta Situs
+    </font></h3>
+  <h7><font color="#FFFFFF"> Copyright © 2008-2020 Bukukustore.com. All rights reserved</font></h7>
+  <br>
+  
   </div>
 </div>
 
-</body> 
-
+</body>
 </html>

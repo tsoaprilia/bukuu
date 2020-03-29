@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 24, 2020 at 12:43 PM
+-- Generation Time: Mar 29, 2020 at 07:42 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -39,8 +39,13 @@ CREATE TABLE `kunjung` (
 --
 
 INSERT INTO `kunjung` (`username`, `email`, `kunci`) VALUES
+('acel', 'cel@gmail.com', ' 123'),
 ('ana', 'ana@gmail.com', ' ana'),
-('aprilia', 'aprilia@gmail.com', ' aprilia');
+('aprilia', 'aprilia@gmail.com', ' aprilia'),
+('ata', 'ata@gmail.com', ' ata'),
+('bahtera', 'bahtera@gmail.com', ' soke'),
+('homa', 'homa@gmail.com', ' homa'),
+('nise', 'ise@gmail.com', ' ise');
 
 --
 -- Indexes for dumped tables

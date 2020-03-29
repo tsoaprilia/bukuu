@@ -44,13 +44,9 @@
               background-color:rgb(212, 171, 118);
               height: 160px;
           }
-          .detail{
-            margin: 0px 600px;
-          }
+          
   </style>
-  
 </head>
-
 <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -83,9 +79,8 @@
             
       </ul>
       <div class="container text-align">
-        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
-       
-       </div>
+      &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="selesai.php" class="btn " >LOGOUT</a></button>
+      </div>
     </div>  
   </nav>
 <div class="jumbotron text-center " style="margin-bottom:0">
@@ -105,7 +100,6 @@
 <br>
 <div class="container text-center">
   <h2>PENGUNJUNG BUKUKU STORE</h2>
-  <h1>DETAIL PEMESANAN</h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
@@ -122,63 +116,31 @@
 </div>
 <br><br>
 <br>
+
 <div class="container">
-<div class="alert alert-warning">
-    <strong>Help!</strong> Untuk tanggal datang yang dimaksud adalah barang yang anda pesan sampai ditangan anda.
-  </div>
+
   <div class="alert alert-secondary">
-    <strong>Help!</strong> Untuk luar daerah Malang minimal 4 hari .
+    <strong>Help!</strong> Untuk LOGOUT di pojok kanan atas :)
   </div>
-  <div class="alert alert-dark">
-    <strong>Help!</strong> Untuk daerah malang Minimal 2 hari.
-  </div>
-  <div class="alert alert-dark">
-    <strong>Help!</strong> Untuk daerah Jawa Timur Minimal 7 hari.
-  </div>
-</div>
-<div class="detail">
-<form name="form1" action="sudahpesanpost.php" method="POST">
-<table border="2" cellspacing=0 cellpadding=5 >
-<colgroup align="center">
-<colgroup align="center">
-<colgroup align="center">
-<thead valign="middle">
-<tr>
-<th width="35"><font color="black" size="4"></font>
-<th width="200"><font color="black" size="4"></font>
-<th width="180"><font color="black" size="4"></font>
-<th width="100"><font color="black" size="4"></font>
-</tr>
-<tbody>
-
-<tr>
-<td colspan=3 align="right">nama<td><input  type="text"  name="nama"  />
-</tr>
-<tr>
-<td colspan=3 align="right">email<td><input  type="text"  name="emaill"  />
-</tr>
-<tr>
-<td colspan=3 align="right">detail alamat<td><input  type="text"  name="alamat"  />
-</tr>
-<tr>
-<td colspan=3 align="right">tanggal pesan<td><input  type="text"  name="tanggal_pesan"  />
-</tr>
-<tr>
-<td colspan=3 align="right">tanggal datang<td><input  type="text"  name="tanggal_datang" />
-</tr>
-<tr>
-<td colspan=3 align="right">tipe pembayaran<td> <select id="tipe" name="tipe">
-<option value="langsung">Langsung</option>
-<option value="transfer">Transfer</option>
-</select>
-</tr>
-</table>
-<br/>
-&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="submit" class="btn btn-primary">Submit</button>
-</form>
+ 
 </div>
 
 
+ <div class="container">
+  
+  <div class="alert alert-primary text-center">
+  <div class="containerhm">
+    <div class="row">
+        <div class="col-sm text-center">
+            <br><br>
+            <h1>"  TERIMAKASIH TELAH BERKUNJUNG....."</h1>
+            <br>
+        </div>
+    </div>
+
+  </div>
+</div>
+</div>
  <br>
  <br>
  <br>

@@ -1,7 +1,14 @@
+<?php
+include 'adminkoneksi.php';
+$nomerr=$_GET['nomerr'];
+$query = "SELECT * FROM goo WHERE nomerr='$nomerr'";
+$result = mysqli_query($connect, $query);
+$row = $result->fetch_assoc();
+?>
 
- 
 
- <!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/frameset.dtd">
 <html lang="en">
 <head>
   <title>Bootstrap 4 Website Example</title>
@@ -47,7 +54,9 @@
               background-color:rgb(212, 171, 118);
               height: 160px;
           }
-          
+          .pesan{
+            margin: -50px 300px;
+          }
   </style>
 </head>
 <body>
@@ -62,17 +71,17 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        
-           
+         
       <div class="container text-align">
         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " role="button">Kembali</a></button>
-        
+      
        </div>
     </div>  
   </nav>
 <div class="jumbotron text-center " style="margin-bottom:0">
   
 </div>
+
 <br>
 <br>
 
@@ -86,7 +95,7 @@
 <br>
 <div class="container text-center">
   <h2>Hallo Pengunjung BUKUKU STORE</h2>
-  <h1>LOGIN DULU YA :( </h1> 
+  <h1>update detail pemesanan:( </h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
@@ -101,35 +110,22 @@
   <span class="border border-warning"></span>
 
 </div>
-<br><br>
-<br>
-<div class="jumbotronn">
-     <br>
-      <br>
-      <br>
 <div class="container">
   <h2>fill the form</h2>
-  <form action="loginpost.php" method="POST">
-<div class="form-group">
-      <label for="username">Username:</label>
-      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
+  <form action="indexupdate.php" method="POST">
+  
+  <div class="form-group">
+      <label for="produk">jenisproduk:</label>
+      <input type="text" class="form-control" name="tanggal_datang" placeholder="Enter tanggal datang" value="<?php echo $row['tanggal_datang'];?>">
     </div>
     <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <label for="a2019">2019:</label>
+      <input type="text" class="form-control" name="tipe" placeholder="transfer / langsung"  value="<?php echo $row['tipe'];?>">
     </div>
-    <div class="form-group">
-      <label for="kunci">Password:</label>
-      <input type="password" class="form-control" id="kunci" placeholder="Enter password" name="kunci">
-    </div>
-    <div class="form-group form-check">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-      </label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <td><input type="hidden" name="nomerr" value="<?php echo $row['nomerr'];?>"></td>
+    <button type="submit" class="btn btn-primary" value="simpan"  >Submit</button>
   </form>
-</div>
+    </form>
     </div>
 <br>
 <br>
