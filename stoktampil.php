@@ -37,7 +37,7 @@
           }
           .opp{
               background-color:rgb(212, 171, 118);
-              height: 500px;
+              height: 1200px;
           }
           
   </style>
@@ -55,11 +55,13 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
    
-      <div class="container text-align"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
-      <button type="button"  class="btn btn-outline-light text-dark"><a href="pesantampil.php" class="btn " >Data Pemesanan</a></button>
-      <button type="button"  class="btn btn-outline-light text-dark"><a href="adminya.php" class="btn " >Data message</a></button>
-      <button type="button"  class="btn btn-outline-light text-dark"><a href="stoktampil.php" class="btn " >stok buku</a></button>
+      <div class="container text-align"> ;   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
+      <button type="button"  class="btn btn-outline-light text-dark"><a href="adminya.php" class="btn " >data message</a></button>
+     <button type="button" class="btn btn-outline-light text-dark"><a href="pesantampil.php" class="btn " >data pemesanan</a></button>
+      
+        <button type="button" class="btn btn-outline-light text-dark"><a href="adminya1.php" class="btn " >detail pemesanan</a></button> 
       <button type="button" class="btn btn-outline-light text-dark"><a href="akhir.php" class="btn " >LOGOUT</a></button> 
+      
     </div>
     </div>  
   </nav>
@@ -79,8 +81,8 @@
   <br><br><br>
   <br>
   <div class="container text-center">
-    <h2>Message Posts from Visitors</h2>
-    <h1>RESPONE PLEASE!</h1> 
+    <h2>Stok buku di BUKUKU STORE</h2>
+    <h1>UPDATE PLEASE!</h1> 
     <span class="border border-primary"></span>
     <span class="border border-secondary"></span>
     <span class="border border-success"></span>
@@ -100,45 +102,32 @@
 
 <br><br>
 <br>
-<br>
-<br>
 
-
-<br>
-<br>
 <div class="opp text-center " style="margin-bottom:0  ">
 <br>
 <div class="iya">
 
 
-<center><h2> Detail Pemesanan </h2>
+<center><h2> Detail Stok Buku </h2>
 <table border="1" width="70%" ></center>
 <tr>
-<th bgcolor="white">nomer</th>
-<th bgcolor="white">Nama</th>
-<th bgcolor="white">email</th>
-<th bgcolor="white">Alamat</th>
-<th bgcolor="white">tanggal pemesanan</th>
-<th bgcolor="white">tanggal buku datang</th>
-<th bgcolor="white">tipe</th>
-<th bgcolor="white">waktu masuk</th>
-<th colspan="2" bgcolor="white">AKSI</th>
+<th bgcolor="white">no</th>
+<th bgcolor="white">judul buku</th>
+<th bgcolor="white">harga buku</th>
+<th bgcolor="white">stok</th>
+<th  bgcolor="white">AKSI</th>
 </tr>
 <?php
 include "adminyakoneksi.php";
-$query = "SELECT * FROM goo";
+$query = "SELECT * FROM stok";
 $sql = mysqli_query($connect,$query);
 while($data = mysqli_fetch_array ($sql)){
   echo "<tr>";
-  echo "<td>",$data ['nomerr']."</td>";
-  echo "<td>",$data ['nama']."</td>";
-  echo "<td>",$data ['emaill']."</td>";
-  echo "<td>",$data ['alamat']."</td>";
-  echo "<td>",$data ['tanggal_pesan']."</td>";
-  echo "<td>",$data ['tanggal_datang']."</td>";
-  echo "<td>",$data ['masuk']."</td>";
-  echo "<td> <a href='indexupdateform.php?nomerr=".$data['nomerr']."'>EDIT</a></td>";
-  echo "<td><a href='indexhapus.php?nomerr=".$data['nomerr']."'onclick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>delete</a></td>";
+  echo "<td>",$data ['nomer']."</td>";
+  echo "<td>",$data ['judul']."</td>";
+  echo "<td>",$data ['harga']."</td>";
+  echo "<td>",$data ['jumlah']."</td>";
+  echo "<td> <a href='stokupdateform.php?nomer=".$data['nomer']."'>EDIT</a></td>";
   echo "</tr>";
 }
 ?>
