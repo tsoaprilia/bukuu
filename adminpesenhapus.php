@@ -120,7 +120,6 @@
 <br>
 
 
-<div class="jumbotron">
  <div class="container">
   
   <div class="alert alert-primary text-center">
