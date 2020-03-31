@@ -134,8 +134,8 @@ input[type=submit]:hover {
 <br><br><br>
 <br>
 <div class="container text-center">
-  <h2>Pengumuman BUKUKU</h2>
-  <h1>TIME T0 SAY WELCOME</h1> 
+  <h2>Admin BUKUKU Store</h2>
+  <h1>HAPUS DATA</h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>

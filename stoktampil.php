@@ -114,7 +114,7 @@
 <th bgcolor="white">no</th>
 <th bgcolor="white">judul buku</th>
 <th bgcolor="white">harga buku</th>
-<th bgcolor="white">stok</th>
+<th bgcolor="white">stok terjual</th>
 <th  bgcolor="white">AKSI</th>
 </tr>
 <?php

@@ -142,21 +142,21 @@ var bebe = 98000 * eval(myForm.o1.value);
     var rekayasa = 125000 * eval(myForm.o36.value);
     var kreta = 125000 * eval(myForm.o37.value);
     var hasil = bebe+mozaik+kamu+ganjil+habibie+heart+senja+kata+bahagia+aku+are+seni+berani+terang+hipnotis+life+alleta+erens+memahami+surat+melintasi+talijiwo+perbincangan+pemetik+the+easy+bhasa+lets+sematik+mesin+teknologi+semikonduktor+pemrograman+aplikasi+syntesa+rekayasa+kreta;
-if (hasil > 3500000) {
+if (hasil > 5000000) {
     myForm.total.value = hasil;
     myForm.diskon.value = hasil*70/100;
     myForm.bayar.value = hasil - eval(myForm.diskon.value);
- } else if (hasil > 2500000 && hasil<=3500000){
+ } else if (hasil > 3500000 && hasil<=5000000){
     myForm.total.value = hasil;
     myForm.diskon.value = hasil*40/100;
     myForm.bayar.value = hasil - eval(myForm.diskon.value);
-   } else if (hasil > 1500000 && hasil<=2500000){
+   } else if (hasil > 1500000 && hasil<=3500000){
     myForm.total.value = hasil;
     myForm.diskon.value = hasil*30/100;
     myForm.bayar.value = hasil - eval(myForm.diskon.value);
    } else if (hasil > 750000 && hasil<=1500000){
     myForm.total.value = hasil;
-    myForm.diskon.value = hasil*30/100;
+    myForm.diskon.value = hasil*20/100;
     myForm.bayar.value = hasil - eval(myForm.diskon.value);
  }else{
     myForm.total.value = hasil;
@@ -343,13 +343,13 @@ document.form1.reset();
     <input  type="text"  name="o37" value="0" onChange="jumlah()"/>
     </tr>
 <tr>
-<td colspan=3 align="right">Jumlah Total<td><input  type="text"  name="total"  disabled="true"/>
+<td colspan=3 align="right">Jumlah Total<td><input  type="text"  name="total"  readonly="true"/>
 </tr>
 <tr>
-<td colspan=3 align="right">Diskon<td><input  type="text"  name="diskon" disabled="true" />
+<td colspan=3 align="right">Diskon<td><input  type="text"  name="diskon" readonly="true" />
 </tr>
 <tr>
-<td colspan=3 align="right">Jumlah Bayar<td><input  type="text"  name="bayar"  disabled="true"/>
+<td colspan=3 align="right">Jumlah Bayar<td><input  type="text"  name="bayar"  readonly="true"/>
 </tr>
 </table>
 <table ><tr><td><br/>

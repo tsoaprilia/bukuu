@@ -106,7 +106,7 @@
 <div class="iya">
 
 
-<center><h2> Message </h2>
+<center><h2> Data Pemesanan </h2>
 <table border="1" width="70%" ></center>
 <tr>
 <th bgcolor="white">id</th>
@@ -150,6 +150,7 @@
 <th bgcolor="white">order35</th>
 <th bgcolor="white">order36</th>
 <th bgcolor="white">order37</th>
+<th bgcolor="white">bayar</th>
 <th colspan="2" bgcolor="white">AKSI</th>
 </tr>
 <?php
@@ -199,6 +200,7 @@ while($data = mysqli_fetch_array ($sql)){
   echo "<td>",$data ['o35']."</td>";
   echo "<td>",$data ['o36']."</td>";
   echo "<td>",$data ['o37']."</td>";
+  echo "<td>",$data ['bayar']."</td>";
   echo "<td> <a href='adminupdateform.php?nomer=".$data['nomer']."'>EDIT</a></td>";
   echo "<td><a href='adminpesenhapus.php?nomer=".$data['nomer']."'onclick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>delete</a></td>";
   echo "</tr>";

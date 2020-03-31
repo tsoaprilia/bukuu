@@ -115,7 +115,7 @@ $row = $result->fetch_assoc();
   <form action="stokupdate.php" method="POST">
   
   <div class="form-group">
-      <label for="produk">jenisproduk:</label>
+      <label for="produk">Stok buku yang sudah terjual:</label>
       <input type="text" class="form-control" name="jumlah" placeholder="Enter stok buku" value="<?php echo $row['jumlah'];?>">
     </div>
    

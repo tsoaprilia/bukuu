@@ -103,7 +103,7 @@
 <br>
 <div class="container text-center">
   <h2>Admin BUKUKU STORE</h2>
-  <h1>LOGIN ADMIN</h1> 
+  <h1>UPDATE DATA</h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
