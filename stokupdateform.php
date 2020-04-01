@@ -94,8 +94,7 @@ $row = $result->fetch_assoc();
 <br><br><br>
 <br>
 <div class="container text-center">
-  <h2>Hallo Pengunjung BUKUKU STORE</h2>
-  <h1>update detail pemesanan:( </h1> 
+  <h2>Hallo Admin BUKUKU :) </h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>

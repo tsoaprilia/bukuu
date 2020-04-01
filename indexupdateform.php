@@ -94,7 +94,7 @@ $row = $result->fetch_assoc();
 <br><br><br>
 <br>
 <div class="container text-center">
-  <h2>Hallo Pengunjung BUKUKU STORE</h2>
+  <h2>Hallo Admin BUKUKU STORE</h2>
   <h1>update detail pemesanan:( </h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
@@ -115,11 +115,11 @@ $row = $result->fetch_assoc();
   <form action="indexupdate.php" method="POST">
   
   <div class="form-group">
-      <label for="produk">jenisproduk:</label>
+      <label for="produk">Tanggal kedatangan buku:</label>
       <input type="text" class="form-control" name="tanggal_datang" placeholder="Enter tanggal datang" value="<?php echo $row['tanggal_datang'];?>">
     </div>
     <div class="form-group">
-      <label for="a2019">2019:</label>
+      <label for="a2019">Tipe pembayaran:</label>
       <input type="text" class="form-control" name="tipe" placeholder="transfer / langsung"  value="<?php echo $row['tipe'];?>">
     </div>
     <td><input type="hidden" name="nomerr" value="<?php echo $row['nomerr'];?>"></td>

@@ -79,7 +79,7 @@
   <br><br><br>
   <br>
   <div class="container text-center">
-    <h2>Admi BUKUKU STORE</h2>
+    <h2>Admin BUKUKU STORE</h2>
     <span class="border border-primary"></span>
     <span class="border border-secondary"></span>
     <span class="border border-success"></span>
