@@ -113,11 +113,11 @@ $row = $result->fetch_assoc();
   <h2>fill the form</h2>
   <form action="stokupdate.php" method="POST">
   
-  <div class="form-group">
-      <label for="produk">Stok buku yang sudah terjual:</label>
-      <input type="text" class="form-control" name="jumlah" placeholder="Enter stok buku" value="<?php echo $row['jumlah'];?>">
+
+    <div class="form-group">
+      <label for="produk">Harga buku:</label>
+      <input type="text" class="form-control" name="harga" placeholder="Enter harga" value="<?php echo $row['harga'];?>">
     </div>
-   
     <td><input type="hidden" name="nomer" value="<?php echo $row['nomer'];?>"></td>
     <button type="submit" class="btn btn-primary" value="simpan"  >Submit</button>
   </form>

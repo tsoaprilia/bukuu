@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+include 'adminkoneksi.php';
+$nomer=$_GET['nomer'];
+$query = "SELECT * FROM stok WHERE nomer='$nomer'";
+$result = mysqli_query($connect, $query);
+$row = $result->fetch_assoc();
+?>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/frameset.dtd">
 <html lang="en">
 <head>
   <title>Bootstrap 4 Website Example</title>
@@ -44,7 +54,9 @@
               background-color:rgb(212, 171, 118);
               height: 160px;
           }
-          
+          .pesan{
+            margin: -50px 300px;
+          }
   </style>
 </head>
 <body>
@@ -59,28 +71,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                <font color="#FF FF FF"> Kategori Buku</font>
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Novel</a>
-                <a class="dropdown-item" href="#">Motifasi</a>
-                <a class="dropdown-item" href="#">Majalah</a>
-                <a class="dropdown-item" href="#">Pusi&Sastra</a>
-                <a class="dropdown-item" href="#">Bahasa</a>
-                <a class="dropdown-item" href="#">Sains&Teknik</a>
-               </div>
-              </li>       
-        
-             
-            
-      </ul>
+         
       <div class="container text-align">
-        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
-       
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="stoktampil.php" class="btn " role="button">Kembali</a></button>
+      
        </div>
     </div>  
   </nav>
@@ -97,11 +91,10 @@
 
 
 
-<br><br>
+<br><br><br>
 <br>
 <div class="container text-center">
-  <h2>Admin BUKUKU STORE</h2>
-  <h1>update detail pemesanan</h1> 
+  <h2>Hallo Admin BUKUKU :) </h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
@@ -116,40 +109,27 @@
   <span class="border border-warning"></span>
 
 </div>
-<br><br>
-<br>
+<div class="container">
+  <h2>fill the form</h2>
+  <form action="stokupdate.php" method="POST">
+  <script language="JavaScript" type="text/javascript">
+function jumlah() {
+var myForm = document.form1;
+var bebe = eval(myForm.p1.value);
 
 
+}
+</script>
 
- <div class="container">
-  
-  <div class="alert alert-primary text-center">
-  <?php
-include 'adminkoneksi.php';
-$nomer = $_POST["nomer"];
-$harga = $_POST["harga"];
-
-$query = "UPDATE stok SET   harga='$harga' WHERE nomer='$nomer'";
-$result =  $connect ->query($query);
-$num = mysqli_affected_rows($connect);
-
- if($num > 0){ 
-     echo " BERHASIL UPDATE DATA <br>";
-    
- }else{
-     echo "gagal update <br>";
- }
- echo "<a href='stoktampil.php'>lihat data</a>";
- 
-?>
-
-  </div>
-</div>
-</div>
- <br>
- <br>
- <br>
- <br>
+    <div class="form-group">
+      <label for="produk">stok buku:</label>
+      <input type="text" class="form-control" onChange="jumlah()" disabled="true" name="p1" placeholder="Enter stok buku" value="<?php echo $row['jumlah'];?>">
+    </div>
+    <td><input type="hidden" name="nomer" value="<?php echo $row['jumlah'];?>"></td>
+    <button type="submit" class="btn btn-primary" value="simpan"  >Submit</button>
+  </form>
+    </form>
+    </div>
 <br>
 <br>
 <br>

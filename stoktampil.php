@@ -55,7 +55,7 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
    
-      <div class="container text-align"> ;   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
+      <div class="container text-align">  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
       <button type="button"  class="btn btn-outline-light text-dark"><a href="adminya.php" class="btn " >data message</a></button>
      <button type="button" class="btn btn-outline-light text-dark"><a href="pesantampil.php" class="btn " >data pemesanan</a></button>
       
@@ -115,7 +115,7 @@
 <th bgcolor="white">judul buku</th>
 <th bgcolor="white">harga buku</th>
 <th bgcolor="white">stok terjual</th>
-<th  bgcolor="white">AKSI</th>
+<th colspan="4" bgcolor="white"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; AKSI</th>
 </tr>
 <?php
 include "adminyakoneksi.php";
@@ -128,6 +128,9 @@ while($data = mysqli_fetch_array ($sql)){
   echo "<td>",$data ['harga']."</td>";
   echo "<td>",$data ['jumlah']."</td>";
   echo "<td> <a href='stokupdateform.php?nomer=".$data['nomer']."'>EDIT</a></td>";
+  echo "<td><a href='stokhapus.php?nomer=".$data['nomer']."'onclick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>delete</a></td>";
+  echo "<td> <a href='stokformtambah.php?kurang=".$data['nomer']."'>kurang</a></td>";
+  
   echo "</tr>";
 }
 ?>

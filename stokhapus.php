@@ -7,6 +7,67 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
  
   <style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.containerr{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 45%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.ya{
+  background-color:rgba(109, 105, 101, 0.157);
+              height: 710px;
+}
+
      
       .jumbotron{
         text-align: center;
@@ -16,10 +77,8 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .jumbotronn{
-        height: 550px;
-        background-color:rgba(77, 73, 68, 0.178);
-       
+    .containerr{
+      background-color: rgba(236, 235, 234, 0);
     }
   .fakeimg {
     height: 700px;
@@ -59,35 +118,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                <font color="#FF FF FF"> Kategori Buku</font>
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Novel</a>
-                <a class="dropdown-item" href="#">Motifasi</a>
-                <a class="dropdown-item" href="#">Majalah</a>
-                <a class="dropdown-item" href="#">Pusi&Sastra</a>
-                <a class="dropdown-item" href="#">Bahasa</a>
-                <a class="dropdown-item" href="#">Sains&Teknik</a>
-               </div>
-              </li>       
-        
-             
-            
-      </ul>
-      <div class="container text-align">
-        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
-       
-       </div>
-    </div>  
+         
   </nav>
 <div class="jumbotron text-center " style="margin-bottom:0">
-  
 </div>
-
 <br>
 <br>
 
@@ -97,11 +131,11 @@
 
 
 
-<br><br>
+<br><br><br>
 <br>
 <div class="container text-center">
-  <h2>Admin BUKUKU STORE</h2>
-  <h1>update detail pemesanan</h1> 
+  <h2>Admin BUKUKU Store</h2>
+  <h1>HAPUS DATA</h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
@@ -118,38 +152,31 @@
 </div>
 <br><br>
 <br>
+<br>
+<br>
 
 
-
- <div class="container">
-  
   <div class="alert alert-primary text-center">
   <?php
 include 'adminkoneksi.php';
-$nomer = $_POST["nomer"];
-$harga = $_POST["harga"];
-
-$query = "UPDATE stok SET   harga='$harga' WHERE nomer='$nomer'";
-$result =  $connect ->query($query);
+$nomer= $_GET['nomer'];
+$query = "DELETE FROM stok WHERE nomer='$nomer'";
+$result =  mysqli_query($connect, $query);
 $num = mysqli_affected_rows($connect);
-
- if($num > 0){ 
-     echo " BERHASIL UPDATE DATA <br>";
-    
+ if($num>0){
+     echo " BERHASIL hapus DATA <br>";
  }else{
-     echo "gagal update <br>";
+     echo "gagal hapus <br>";
  }
  echo "<a href='stoktampil.php'>lihat data</a>";
- 
 ?>
 
   </div>
 </div>
-</div>
- <br>
- <br>
- <br>
- <br>
+
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
