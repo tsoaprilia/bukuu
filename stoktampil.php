@@ -26,6 +26,10 @@
     height: 70px;
     margin: 6px;
   }
+  .ya{
+    background-color:rgba(47, 45, 42, 0.157);
+                height: 510px;
+  }
   .navbar {
            background-color:rgb(212, 171, 118);
            height: 65px;
@@ -97,10 +101,38 @@
     <span class="border border-warning"></span>
   
   </div>
-  <br><br>
-  <br>
 
 <br><br>
+<br>
+<div class="ya text-center " style="margin-bottom:0  ">
+<br><br>
+<div class="container">
+  <h3>TAMBAH DATA BUKU</h3>
+  <h4>jika tidak menambah buku lewati saja:)</h4>
+  <form action="stotambahpost.php" method="POST">
+      <br>
+    <div class="form-group">
+      <label for="produk">Judul buku:</label>
+      <input type="text" class="form-control" name="judul" placeholder="Enter judul buku" >
+    </div>
+    <div class="form-group">
+      <label for="produk">harga buku:</label>
+      <input type="text" class="form-control" name="harga" placeholder="Enter harga buku" >
+    </div>
+    <div class="form-group">
+      <label for="produk">Stok yang sudah terjual:</label>
+      <input type="text" class="form-control" name="jumlah" placeholder="Enter Stok yang suda terjual" >
+    </div>
+   
+    <button type="submit" class="btn btn-primary" value="simpan"  >Kirim</button>
+  </form>
+    </form>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
 <br>
 
 <div class="opp text-center " style="margin-bottom:0  ">
@@ -115,7 +147,7 @@
 <th bgcolor="white">judul buku</th>
 <th bgcolor="white">harga buku</th>
 <th bgcolor="white">stok terjual</th>
-<th colspan="2" bgcolor="white"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; AKSI</th>
+<th colspan="3" bgcolor="white">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; AKSI</th>
 </tr>
 <?php
 include "adminyakoneksi.php";
@@ -129,7 +161,8 @@ while($data = mysqli_fetch_array ($sql)){
   echo "<td>",$data ['jumlah']."</td>";
   echo "<td> <a href='stokupdateform.php?nomer=".$data['nomer']."'>EDIT</a></td>";
    echo "<td> <a href='stokformtambah.php?nomer=".$data['nomer']."'>tambah yg terjual</a></td>";
-  
+   echo "<td><a href='stotambahhapus.php?nomer=".$data['nomer']."'onclick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>delete</a></td>";
+
   echo "</tr>";
 }
 ?>
