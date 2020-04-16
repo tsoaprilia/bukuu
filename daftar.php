@@ -55,11 +55,10 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
    
-      <div class="container text-align">    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
+      <div class="container text-align">    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
       <button type="button"  class="btn btn-outline-light text-dark"><a href="stoktampil.php" class="btn " >stok buku</a></button>
         <button type="button"  class="btn btn-outline-light text-dark"><a href="pesantampil.php" class="btn " >Data Pemesanan</a></button>
         <button type="button" class="btn btn-outline-light text-dark"><a href="adminya1.php" class="btn " >detail pemesanan</a></button>
-        <button type="button" class="btn btn-outline-light text-dark"><a href="daftar.php" class="btn " >Buku Sudah diantar</a></button>
         <button type="button" class="btn btn-outline-light text-dark"><a href="akhir.php" class="btn " >LOGOUT</a></button> 
       </div>
     </div>  
@@ -80,8 +79,8 @@
 <br><br><br>
 <br>
 <div class="container text-center">
-  <h2>Message Posts from Visitors</h2>
-  <h1>RESPONE PLEASE!</h1> 
+  <h2>Daftar Buku yang telah sampai ditangan pelanggan</h2>
+  <h1>Update PLEASE!</h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
@@ -96,10 +95,9 @@
   <span class="border border-warning"></span>
 
 </div>
+<br><br><br><br>
+<br>
 <br><br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <div class="opp text-center " style="margin-bottom:0  ">
@@ -107,36 +105,37 @@
 <div class="iya">
 
 
-<center><h2> Message </h2>
+<center><h2> Daftar pengantaran barang </h2>
 <table border="1" width="70%" ></center>
 <tr>
-<th bgcolor="white">id</th>
-<th bgcolor="white">username</th>
-<th bgcolor="white">email</th>
-<th bgcolor="white">message</th>
-<th bgcolor="white">time</th>
-<th bgcolor="white">DELETE</th>
+<th bgcolor="white">nomer</th>
+<th bgcolor="white">Nama</th>
+<th bgcolor="white">Alamat</th>
+<th bgcolor="white">nama pengantar</th>
+<th bgcolor="white">tanggal barang sampai</th>
+<th bgcolor="white">pembayaran</th>
+<th colspan="2" bgcolor="white">AKSI</th>
 </tr>
 <?php
 include "adminyakoneksi.php";
-$query = "SELECT * FROM contact";
+$query = "SELECT * FROM goo";
 $sql = mysqli_query($connect,$query);
 while($data = mysqli_fetch_array ($sql)){
   echo "<tr>";
-  echo "<td>",$data ['id']."</td>";
-  echo "<td>",$data ['fname']."</td>";
-  echo "<td>",$data ['emaill']."</td>";
-  echo "<td>",$data ['subject']."</td>";
-  echo "<td>",$data ['time']."</td>";
-  echo "<td><a href='admincontacthapus.php?id=".$data['id']."'onclick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>delete</a></td>";
+  echo "<td>",$data ['nomerr']."</td>";
+  echo "<td>",$data ['nama']."</td>";
+  echo "<td>",$data ['alamat']."</td>";
+  echo "<td>",$data ['pengantar']."</td>";
+  echo "<td>",$data ['tgl']."</td>";
+  echo "<td>",$data ['bayar']."</td>";
+  echo "<td> <a href='daftarup.php?nomerr=".$data['nomerr']."'>EDIT</a></td>";
+  echo "<td><a href='daftarhapus.php?nomerr=".$data['nomerr']."'onclick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>delete</a></td>";
   echo "</tr>";
 }
 ?>
 
 
 </div>
-<br>
-
 <br>
   </div>
 </div>

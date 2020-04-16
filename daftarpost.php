@@ -1,8 +1,4 @@
-
- 
-
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap 4 Website Example</title>
@@ -62,7 +58,26 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <font color="#FF FF FF"> Kategori Buku</font>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Novel</a>
+                <a class="dropdown-item" href="#">Motifasi</a>
+                <a class="dropdown-item" href="#">Majalah</a>
+                <a class="dropdown-item" href="#">Pusi&Sastra</a>
+                <a class="dropdown-item" href="#">Bahasa</a>
+                <a class="dropdown-item" href="#">Sains&Teknik</a>
+               </div>
+              </li>       
+        
+             
+            
+      </ul>
       <div class="container text-align">
         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
        
@@ -86,7 +101,7 @@
 <br>
 <div class="container text-center">
   <h2>Admin BUKUKU STORE</h2>
-  <h1>LOGIN ADMIN</h1> 
+  <h1>update Daftar Buku yang telah sampai ditanggan pembeli</h1> 
   <span class="border border-primary"></span>
   <span class="border border-secondary"></span>
   <span class="border border-success"></span>
@@ -105,45 +120,38 @@
 <br>
 
 
-<div class="jumbotronn">
-      <br>
-      <br>
-      <br>
-      <?PHP
-     if(isset($_GET['pesan'])){
-         if($_GET['pesan']=="gagal"){
-             echo "login gagal! username dan password salah";
-         }else if($_GET['psan']=="logout"){
-             echo "anda telah berhasil logout";
-         }
-     }
 
-     ?>
-<div class="container">
-  <h2>fill the form</h2>
-  <form action="adminpost.php" method="POST">
-<div class="form-group">
-      <label for="username">Username:</label>
-      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="password">Password:</label>
-      <input type="password" class="form-control" id="password" placeholder="Enter password" name="pswd">
-    </div>
-    <div class="form-group form-check">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-      </label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+ <div class="container">
+  
+  <div class="alert alert-primary text-center">
+  <?php
+include 'adminkoneksi.php';
+
+$nomerr = $_POST["nomerr"];
+$pengantar = $_POST["pengantar"];
+$tgl = $_POST["tgl"];
+$bayar= $_POST["bayar"];
+
+$query = "UPDATE goo SET  pengantar='$pengantar', tgl='$tgl', bayar='$bayar' WHERE nomerr='$nomerr'";
+$result =  $connect ->query($query);
+$num = mysqli_affected_rows($connect);
+
+ if($num > 0){ 
+     echo " BERHASIL UPDATE DATA <br>";
+    
+ }else{
+     echo "gagal update <br>";
+ }
+ echo "<a href='daftar.php'>lihat data</a>";
+ 
+
+
+
+?>
+
+  </div>
 </div>
-
-    </div>
+</div>
  <br>
  <br>
  <br>

@@ -12,7 +12,7 @@
         text-align: center;
         margin-top: -390px;
         width:2700px;
-        height: 750px;
+        height: 800px;
         background-image: url(A.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -58,10 +58,12 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
    
-      <div class="container text-align"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
+      <div class="container text-align"> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
       <button type="button"  class="btn btn-outline-light text-dark"><a href="stoktampil.php" class="btn " >stok buku</a></button>
       <button type="button"  class="btn btn-outline-light text-dark"><a href="adminya.php" class="btn " >Data message</a></button>
         <button type="button"  class="btn btn-outline-light text-dark"><a href="adminya1.php" class="btn " >Detail Pemesanan</a></button>
+        <button type="button" class="btn btn-outline-light text-dark"><a href="daftar.php" class="btn " >Buku sudah diantar</a></button>
+        
         <button type="button" class="btn btn-outline-light text-dark"><a href="akhir.php" class="btn " >LOGOUT</a></button> 
       </div>
     </div>  
@@ -100,7 +102,7 @@
 </div>
 <br><br>
 <br>
-<br>
+<br><br>
 <div class="opp text-center " style="margin-bottom:0  ">
 <br>
 <div class="iya">

@@ -11,7 +11,7 @@
       .jumbotron{
         text-align: center;
         margin-top: -220px;
-        height: 550px;
+        height: 600px;
         background-image: url(A.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -59,10 +59,11 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
    
-      <div class="container text-align">  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
+      <div class="container text-align">  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<button type="button" class="btn btn-outline-light text-dark"><a href="index.html" class="btn " >Kembali ke Home</a></button>
       <button type="button"  class="btn btn-outline-light text-dark"><a href="adminya.php" class="btn " >data message</a></button>
      <button type="button" class="btn btn-outline-light text-dark"><a href="pesantampil.php" class="btn " >data pemesanan</a></button>
-      
+     <button type="button" class="btn btn-outline-light text-dark"><a href="daftar.php" class="btn " >Buku sudah diantar</a></button>
+        
         <button type="button" class="btn btn-outline-light text-dark"><a href="adminya1.php" class="btn " >detail pemesanan</a></button> 
       <button type="button" class="btn btn-outline-light text-dark"><a href="akhir.php" class="btn " >LOGOUT</a></button> 
       
@@ -103,7 +104,7 @@
   </div>
 
 <br><br>
-<br>
+<br><br><br><br>
 <div class="ya text-center " style="margin-bottom:0  ">
 <br><br>
 <div class="container">
