@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 29, 2020 at 07:42 PM
+-- Generation Time: Apr 19, 2020 at 05:30 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -42,10 +42,22 @@ INSERT INTO `kunjung` (`username`, `email`, `kunci`) VALUES
 ('acel', 'cel@gmail.com', ' 123'),
 ('ana', 'ana@gmail.com', ' ana'),
 ('aprilia', 'aprilia@gmail.com', ' aprilia'),
+('Apriliadc', 'aprilia@gmail.com', ' 123'),
 ('ata', 'ata@gmail.com', ' ata'),
 ('bahtera', 'bahtera@gmail.com', ' soke'),
+('devi', 'devi@gmail.com', ' 123'),
+('hapu', 'up@gmail.com', ' hapu'),
 ('homa', 'homa@gmail.com', ' homa'),
-('nise', 'ise@gmail.com', ' ise');
+('hu', 'hu@gmail.com', ' hu'),
+('ita', 'ita@gmail.com', ' ita'),
+('ju', 'ju@gmail.com', ' ju'),
+('juu', 'ju@gmail.com', ' juu'),
+('masuk', 'masuk@gamil.com', ' masuk'),
+('naik', 'naik@gmail.com', ' naik'),
+('nasi', 'nasi@gmail.com', ' nasi'),
+('nise', 'ise@gmail.com', ' ise'),
+('qia', 'q@gmail.com', ' g'),
+('sani', 'sani@gmail.com', ' sani');
 
 --
 -- Indexes for dumped tables

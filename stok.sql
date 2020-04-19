@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2020 at 03:11 PM
+-- Generation Time: Apr 19, 2020 at 05:32 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -40,7 +40,7 @@ CREATE TABLE `stok` (
 --
 
 INSERT INTO `stok` (`nomer`, `judul`, `harga`, `jumlah`) VALUES
-(1, 'BRINGING UP BEBE', 98000, 11),
+(1, 'BRINGING UP BEBE', 100000, 890),
 (2, 'MOZAIK TERINDAH', 98000, 0),
 (3, 'KAMU TERLALU BANYAK BERCANDA', 125000, 1),
 (4, 'GANJIL GENAP', 95000, 7),
@@ -68,15 +68,17 @@ INSERT INTO `stok` (`nomer`, `judul`, `harga`, `jumlah`) VALUES
 (26, 'EASY GRAMMAR FOR BEGINNER', 98000, 0),
 (27, '3 BHASA:KAMUS BERGAMBAR SUPER GENIUS', 98000, 0),
 (28, 'LETS SPEAK', 125000, 0),
-(29, 'SEMANTIK', 95000, 0),
+(29, 'SEMANTIK', 110000, 0),
 (30, ' MESIN LISTRIK ARUS BOLAK BALIK', 110000, 0),
 (31, 'TEKNOLOGI PERBAIKAN TANAH', 110000, 3),
 (32, 'SEMIKONDUKTOR', 110000, 0),
 (33, 'PEMROGRAMAN MATLAB', 110000, 4),
 (34, 'APLIKASI TEKNOLOGI KUANTUM', 125000, 12),
-(35, 'SYNTESA POLY LACTID ACID', 125000, 0),
+(35, 'SYNTESA POLY LACTID ACID', 125000, 1),
 (36, 'REKAYASA LALU LINTAS', 125000, 2),
-(37, 'KRETA CEPAT', 125000, 2);
+(42, 'Kereta Cepat', 125000, 9),
+(43, 'kepadamu', 98000, 6),
+(44, 'mausjj', 232435, 2);
 
 --
 -- Indexes for dumped tables
@@ -96,7 +98,7 @@ ALTER TABLE `stok`
 -- AUTO_INCREMENT for table `stok`
 --
 ALTER TABLE `stok`
-  MODIFY `nomer` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `nomer` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
